@@ -18,12 +18,4 @@ export default function Home() {
 
 }
 
-export async function getStaticProps(context) {
-  return {
-    redirect:
-    {
-      destination: '/cardapio',
-      permanet: false
-    }
-  }
-}
+
