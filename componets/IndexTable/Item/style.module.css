@@ -1,0 +1,136 @@
+.container{
+    width: 100%;
+}
+
+.box {
+    width: 100%;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 40px;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 40px 40px;
+    border: 2px solid white;
+    border-radius: 40px;
+}
+.boxUpdate{
+    background-color: rgba(0, 0, 0, 0.56);
+    width: 100vw;
+    text-align: center;
+    display: grid;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    padding: 20px;
+
+}
+.topFormUpdate{
+    display: flex;
+    justify-content: space-between;
+    padding:0px 20px;
+    align-items: center;
+    border:  3px solid white;
+    border-radius: 10px 10px 0px 0px;
+    background-color: black;
+}
+.titeFormUpdate{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.closeFormUpdate{
+    width: 30px;
+    height: 30px;
+}
+.closeFormUpdate svg{
+    width: 100%;
+    height: 100%;
+}
+.closeFormUpdate:hover{
+    cursor: pointer;
+}
+.containerUpdate{
+    color: white;
+    width: 100%;
+    position:fixed;
+    top: 25%; left: 0%;
+    padding: 10px;
+}
+.buttonIndex{
+    height: 30px;
+    height: 30px;
+    margin: auto auto;
+}
+.buttonIndex svg{
+    width: 100%;
+    height: 100%;
+}
+.buttonsTable{
+    display: flex;
+}
+.id{
+    overflow: hidden;
+}
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+.price {
+    font-size: 18px;
+    color: var(--dark-text);
+}
+
+.desc {
+    height: 21px;
+    overflow: hidden;
+    text-align: center;
+    color: var(--sub-dark-text);
+}
+
+.ScreenForm{
+    height: auto;
+    width: auto;
+    display: flex;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (max-width:720px) {
+    .box {
+        width: 100%;
+        flex-direction: column;
+        grid-template-columns: auto;
+    }
+
+    .box img {
+        width: 200px;
+        height: 200px;
+    }
+
+}
+
+
+@media (max-width:540px) {
+    .table td {
+        font-size: 0.8rem;
+    }
+.title {
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+.buttonIndex{
+    height: 20px ;
+    height: 20px ;
+    margin: auto auto;
+}
+}

@@ -1,0 +1,207 @@
+
+.box {
+    width: 90%;
+    border: 1px solid white;
+    color: black;
+    flex-direction: column;
+}
+.title{
+    font-size: 2rem;
+    text-align: center;
+    margin: 50px 0px 20px 0px;
+}
+.titleInput{
+    font-family: 'Inter', sans-serif;
+}
+/* ComboBox */
+.newCategory{
+    background-color: green !important;
+    color: white;
+}
+.comboBox{
+  -webkit-appearance: button;
+  -webkit-border-radius: 2px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-user-select: none;
+  border: 1px solid #AAA;
+  color: #555;
+  font-size: inherit;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #ddd;
+    list-style: none;
+}
+
+
+/* INPUT */
+.input {
+    width: 100%;
+    border: 0;
+    padding: 7px 7px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 5px 0px;
+}
+
+.input:focus {
+    outline: none;
+    background-color: rgba(228, 228, 228, 0.5);
+    transition: 0.2s;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input:valid {
+    border-color:black;
+
+}
+.input:invalid {
+    border-color:red;
+
+}
+
+.input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.board {
+    width: 100%;
+    height: max-content + 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.board  textarea {
+      resize: none;
+  }
+
+
+.inputImg {
+  display: none;
+}
+
+.picture {
+  width: 400px;
+  aspect-ratio: 16/9;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  border: 2px dashed currentcolor;
+  cursor: pointer;
+  font-family: sans-serif;
+  transition: color 300ms ease-in-out, background 300ms ease-in-out;
+  outline: none;
+  overflow: hidden;
+}
+
+.picture:hover {
+  color: #777;
+  background: #ccc;
+}
+
+.picture:active {
+  border-color: turquoise;
+  color: turquoise;
+  background: #eee;
+}
+
+.picture:focus {
+  color: #777;
+  background: #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.picture__img {
+  max-width: 100%;
+}
+
+.buttonForm {
+    align-items: center;
+    background-clip: padding-box;
+    background-color: #247e00;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+}
+
+.buttonForm:hover,
+.buttonForm:focus {
+    background-color: #007413;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.buttonForm:hover {
+    transform: translateY(-1px);
+}
+
+.buttonForm:active {
+    background-color: #00be3f;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}
+
+.toggleForm {
+    display: flex;
+    border: 3px solid #007413;
+    border-radius: 10px;
+    margin: 5px;
+    width: 200px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggleForm:hover {
+    cursor: pointer;
+    background-color: #007413;
+    color: black;
+    transition: 0.5s;
+}
+.msgSpan{
+    text-align: center;
+    font-weight: bold;
+}
+.errorMsg {
+    color: red;
+}
+.okayMsg{
+    color: green;
+}
+
+@media (max-width:425px) {
+    .picture{
+        width: 284px;
+    }
+}

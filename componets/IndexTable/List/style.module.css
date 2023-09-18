@@ -1,0 +1,104 @@
+.container {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.full{
+    border: 1px solid black;
+
+}
+.full th{
+    padding-left: 5px;
+}
+.title {
+    font-size: 4rem;
+}
+.titlesTable{
+    font-weight: bold;
+    color: white;
+    background-color: rgba(32, 71, 140, 1);
+    padding: 10px 12px;
+
+}
+.titlesTable th{
+    padding: 1rem;
+
+}
+.itensTable tr td{
+    color: black;
+    font-weight: bold;
+}
+.itensTable tr:nth-child(even) {
+  background: rgba(140, 140, 140, 1);
+}
+
+.itensTable tr:nth-child(odd) {
+  background: rgba(190, 190, 190, 1);
+}
+
+.thDesc{
+    width: 300px;
+}
+.centerText{
+    text-align: center;
+
+}
+.wrapper {
+    min-width: 400px;
+    width: 100%;
+    text-align: left;
+    margin: 10px 10px;
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+    background-color: grey;
+
+}
+
+.wrapper td{
+    padding: 1em;
+}
+.titleWrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.notFound{
+    padding-left: 10px;
+    min-height: 50px;
+    text-align: left;
+    font-size: 1.2rem;
+    font-style: italic;
+    opacity: 0.7;
+}
+@media (max-width:540px) {
+    .full th{
+    border:1px solid black ;
+    padding-left: 0px;
+    }
+
+    .titlesTable{
+        text-align: center;
+        padding-left: 0px;
+    }
+}
+@media (max-width:425px) {
+    .title {
+        font-size: 3rem;
+    }
+    .titlesTable th{
+    font-size: 14px;
+    padding: 10px 5px;
+}
+    .wrapper {
+        padding: 0;
+    }
+
+    .desc {
+        font-size: 1rem;
+        text-align: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.39);
+    }
+}
